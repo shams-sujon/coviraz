@@ -1,0 +1,87 @@
+/* Navbar */
+.navbar {
+    padding: 2.5rem 0;
+    transition: $transition;
+
+    .navbar-brand {
+        padding: 0;
+        margin-right: 0;
+
+        img {
+            max-width: 170px;
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            font-weight: $font-weight-medium;
+            padding: .5rem 1rem;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: $dark-blue;
+
+            &:hover,
+            &:focus,
+            &.active {
+                color: $blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .navbar {
+        .navbar-brand img {
+            max-width: 120px;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 0.5rem .8rem;
+        }
+
+        .navbar-cta .btn {
+            min-width: auto;
+            padding: .8rem 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        .navbar-nav {
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .navbar-toggler {
+            color: $dark-blue;
+            padding: 0;
+            border: 0;
+            border-radius: 2px;
+            font-size: 1.9rem;
+            line-height: 1;
+            width: 1.9rem;
+            height: 1.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover,
+            &:focus {
+                color: $blue;
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar {
+        padding: 1.5rem 1.5rem;
+    }
+}

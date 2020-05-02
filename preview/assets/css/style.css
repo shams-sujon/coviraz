@@ -1,0 +1,324 @@
+/* 
+Template Name: Coviraz
+Description: 
+Template URI: 
+Author: Marvel_Theme
+Author URI: 
+Version: 1.0
+
+-----------------------------------------------------
+
+--- CSS Table of contents ---
+1. Base styles
+2. Navbar
+
+
+*/
+/* Base styles */
+body {
+  background-color: #ffffff;
+  color: #262c3d;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.313rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.buttons .btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.btn {
+  font-weight: 500;
+  min-width: 10rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.btn-sm {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+}
+
+.btn i,
+.btn .icon {
+  margin-right: 0.3rem;
+  line-height: 1;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #0d6bff;
+  border-color: #0d6bff;
+}
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #0054d9;
+  border-color: #004ac0;
+}
+.btn-primary.focus, .btn-primary:focus {
+  color: #ffffff;
+  background-color: #004ac0;
+  border-color: #0040a6;
+  box-shadow: 0 0 0 0.2rem rgba(13, 107, 255, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 107, 255, 0.5);
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Preloader */
+#preloader-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.preloader-wave-effect {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+.preloader-wave-effect::before, .preloader-wave-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0d6bff;
+  border-radius: 100rem;
+  animation: 1.6s linear 0s normal none infinite running preloader-wave;
+}
+.preloader-wave-effect::after {
+  animation-delay: -0.8s;
+}
+
+.preloader-text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+@keyframes preloader-wave {
+  0% {
+    opacity: 0.5;
+    transform: scale(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1, 1);
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1200px;
+  }
+}
+@media (max-width: 767.98px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1538461538rem;
+  }
+
+  h4 {
+    font-size: 1.313rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    min-width: 5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.2rem;
+  }
+
+  .buttons .btn {
+    width: 90%;
+  }
+
+  .buttons .btn:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+/* Navbar */
+.navbar {
+  padding: 2.5rem 0;
+  transition: all 0.2s ease-in-out;
+}
+.navbar .navbar-brand {
+  padding: 0;
+  margin-right: 0;
+}
+.navbar .navbar-brand img {
+  max-width: 170px;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #262c3d;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link.active {
+  color: #0d6bff;
+}
+
+@media (max-width: 1199.98px) {
+  .navbar .navbar-brand img {
+    max-width: 120px;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0.5rem 0.8rem;
+  }
+  .navbar .navbar-cta .btn {
+    min-width: auto;
+    padding: 0.8rem 1.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .navbar .navbar-toggler {
+    color: #262c3d;
+    padding: 0;
+    border: 0;
+    border-radius: 2px;
+    font-size: 1.9rem;
+    line-height: 1;
+    width: 1.9rem;
+    height: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .navbar-toggler:hover, .navbar .navbar-toggler:focus {
+    color: #0d6bff;
+    outline: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar {
+    padding: 1.5rem 1.5rem;
+  }
+}
