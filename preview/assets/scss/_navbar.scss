@@ -23,7 +23,7 @@
 .navbar-light {
     .navbar-nav {
         .nav-link {
-            color: $dark-blue;
+            color: lighten($dark-blue, 32);
 
             &:hover,
             &:focus,

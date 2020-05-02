@@ -115,14 +115,14 @@ h6 {
         color: $white;
         background-color: darken($blue, 15);
         border-color: darken($blue, 20);
-        box-shadow: 0 0 0 0.2rem rgba($blue, .5);
+        box-shadow: 0 0 0 .2rem rgba($blue, .5);
     }
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba($blue, .5);
+    box-shadow: 0 0 0 .2rem rgba($blue, .5);
 }
 
 
@@ -132,9 +132,11 @@ section {
     overflow: hidden;
 }
 
+main {
+    min-height: 70vh;
+}
 
-
-/* Preloader */
+// Preloader
 #preloader-wrapper {
     position: fixed;
     left: 0;
@@ -170,6 +172,7 @@ section {
         border-radius: 100rem;
         animation: 1.6s linear 0s normal none infinite running preloader-wave;
     }
+
     &::after {
         animation-delay: -0.8s;
     }

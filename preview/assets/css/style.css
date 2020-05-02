@@ -20,7 +20,7 @@ body {
   color: #262c3d;
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Barlow", sans-serif;
+  font-family: "Heebo", sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
   position: relative;
@@ -140,7 +140,10 @@ section {
   overflow: hidden;
 }
 
-/* Preloader */
+main {
+  min-height: 70vh;
+}
+
 #preloader-wrapper {
   position: fixed;
   left: 0;
@@ -276,7 +279,7 @@ section {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #262c3d;
+  color: #6675a0;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link.active {
   color: #0d6bff;
@@ -321,4 +324,58 @@ section {
   .navbar {
     padding: 1.5rem 1.5rem;
   }
+}
+/* Footer */
+.social {
+  margin-bottom: 0.9rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50rem;
+  color: #6675a0;
+}
+.social a:hover {
+  color: #0d6bff;
+}
+
+.footer-links {
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-links li:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer-links a {
+  font-size: 0.875rem;
+  color: #6675a0;
+}
+.footer-links a:hover {
+  color: #0d6bff;
+}
+
+.copyright {
+  color: #6675a0;
+  text-align: center;
+}
+.copyright a {
+  font-weight: 500;
+  color: #262c3d;
+}
+.copyright a:hover {
+  color: #0d6bff;
 }
