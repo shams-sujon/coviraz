@@ -1,28 +1,201 @@
 /* Checker tool */
 
 .checker-wrapper {
-    background: lighten($blue, 46);
+    background: lighten($blue, 35);
     position: relative;
+}
 
-    .slider-control-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-        width: 100%;
-        padding: 1rem 2rem;
-    }
+.slider-control-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 1.5rem;
+}
 
-    .screen {
-        padding: 5rem;
+.screen {
+    padding: 100px 150px;
+
+    .glowing-text {
+        color: $blue;
+        font-weight: $font-weight-bold;
     }
 
     .anim-icon {
         width: 100px;
         height: 100px;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        min-width: 250px;
+
+        span {
+            margin-right: .5rem;
+        }
+    }
+
+    .custom-select,
+    .form-control,
+    .custom-control-label {
+        height: auto;
+        padding: 1rem 1.5rem;
+        border-color: transparent;
+        background: $white;
+        border-radius: 3px;
+        box-shadow: 0px 2px 6.65px 0.35px rgba(0, 12, 65, 0.1);
+        display: block;
+        transition: $transition;
+
+        &:hover,
+        &:focus {
+            border-color: $blue;
+        }
+    }
+
+    .custom-select-wrapper {
+        position: relative;
+
+        &:before {
+            content: "\f107";
+            font-family: 'Line Awesome Free';
+            font-weight: 900;
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .custom-select {
+        cursor: pointer;
+    }
+
+    label,
+    .label {
+        font-weight: $font-weight-medium;
+        color: lighten($dark-blue, 32);
+        margin-bottom: .3rem;
+    }
+
+    .custom-control {
+        margin-bottom: 1.5rem;
+        padding-left: 0;
+    }
+
+    .custom-control-label {
+        position: relative;
+        margin-bottom: 0;
+        padding: 1rem 1.5rem 1rem 3rem;
+        cursor: pointer;
+        color: $dark-blue;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 1.5rem;
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            pointer-events: none;
+            content: "";
+            background-color: $white;
+            border: #adb5bd solid 1px;
+            border-radius: 50rem;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 1.75rem;
+            display: block;
+            width: .5rem;
+            height: .5rem;
+            content: "";
+            background: $white;
+            transform: translateY(-50%);
+            border-radius: 50rem;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 19px 1px rgba(0, 12, 65, 0.1);
+
+        }
+    }
+
+    .custom-control-input:checked~.custom-control-label {
+        background: $blue;
+        color: $white;
+        box-shadow: 0px 10px 19px 1px rgba(0, 12, 65, 0.1);
+    }
+
+    .custom-control-input:checked~.custom-control-label::before {
+        color: $white;
+        border-color: $white;
+        background-color: $white;
+    }
+
+    .custom-control-input:checked~.custom-control-label::after {
+        background: $blue;
+    }
+
+    .block {
+        padding: 1.5rem 1.8rem;
+        border-color: transparent;
+        background: $white;
+        border-radius: 3px;
+        box-shadow: 0px 2px 6.65px 0.35px rgba(0, 12, 65, 0.1);
+
+        ul {
+            li:not(:last-child) {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    &.one {
+        background: url(../img/doc.png) no-repeat right -50px top 130px / auto 80%;
+
+        .screen-content {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    &.two {
+        .screen-content {
+            ul {
+                margin: 2rem 0;
+                padding: 0;
+                list-style: none;
+                text-align: left;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    i {
+                        margin-right: 1rem;
+                        font-size: 2rem;
+                        color: $blue;
+                    }
+
+                    a {
+                        color: $blue;
+                    }
+                }
+            }
+        }
     }
 }

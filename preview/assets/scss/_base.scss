@@ -6,7 +6,7 @@ body {
     font-size: $font-size-base;
     font-weight: $font-weight-normal;
     font-family: $body-font-family;
-    line-height: $line-height-base;
+    line-height: $line-height-lg;
     overflow-x: hidden;
     position: relative;
 }
@@ -119,12 +119,54 @@ h6 {
     }
 }
 
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: $white;
+    background-color: darken($blue, 15);
+    border-color: darken($blue, 20);
+}
+
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem rgba($blue, .5);
 }
 
+
+.btn-secondary {
+    color: $dark-blue;
+    background-color: lighten($blue, 30);
+    border-color: lighten($blue, 30);
+
+    &:hover {
+        color: $white;
+        background-color: darken($blue, 10);
+        border-color: darken($blue, 15);
+    }
+
+    &.focus,
+    &:focus {
+        color: $white;
+        background-color: darken($blue, 15);
+        border-color: darken($blue, 20);
+        box-shadow: 0 0 0 .2rem rgba($blue, .5);
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: darken($blue, 15);
+    border-color: darken($blue, 20);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba($blue, .5);
+}
 
 section {
     position: relative;

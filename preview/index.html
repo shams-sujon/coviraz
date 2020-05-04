@@ -72,77 +72,507 @@
     <!-- Main -->
     <main class="main">
         <div class="container">
-            <div class="checker-wrapper">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="screen one">
-                                <p class="glowing-text">Stay Home, Stay Safe</p>
-                                <h2>COVID-19 Testing Tool</h2>
-                                <div class="anim-icon">
-                                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_wpGbRj.json"
-                                        background="transparent" speed="1" style="width: 100%; height: 100%;" loop
-                                        autoplay>
-                                    </lottie-player>
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="checker-wrapper mt-4 mb-5">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="screen one">
+                                        <div class="screen-content text-center">
+                                            <p class="glowing-text mb-2">Stay Home, Stay Safe</p>
+                                            <h2>COVID-19 Testing Tool</h2>
+                                            <div class="anim-icon">
+                                                <lottie-player
+                                                    src="https://assets7.lottiefiles.com/packages/lf20_wpGbRj.json"
+                                                    background="transparent" speed="1"
+                                                    style="width: 100%; height: 100%;" loop autoplay>
+                                                </lottie-player>
+                                            </div>
+                                            <p>
+                                                COVID-19 Testing Tool will help you to understand what you will do next
+                                                on COVID-19.
+                                            </p>
+                                            <p>
+                                                Let’s just watch out for one another by recognizing our position,
+                                                seeking not to harm others, and reserving treatment for others in need
+                                            </p>
+                                            <a href="#" class="btn btn-primary swiper-next mt-3">Get Started</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <p>
-                                    COVID-19 Testing Tool will help you to understand what you will do next on COVID-19.
-                                </p>
-                                <p>
-                                    Let’s just watch out for one another by recognizing our position, seeking not to
-                                    harm others, and reserving treatment for others in need
-                                </p>
-                                <a href="#" class="btn btn-primary swiper-next">Get Started</a>
+                                <div class="swiper-slide">
+                                    <div class="screen two">
+                                        <div class="screen-content text-center">
+                                            <p class="glowing-text">Stay Home, Stay Safe</p>
+                                            <h2>COVID-19 Testing Tool</h2>
+                                            <div class="anim-icon">
+                                                <lottie-player
+                                                    src="https://assets7.lottiefiles.com/packages/lf20_wpGbRj.json"
+                                                    background="transparent" speed="1"
+                                                    style="width: 100%; height: 100%;" loop autoplay>
+                                                </lottie-player>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <i class="las la-user-edit"></i>
+                                                    <span>You'll address a some of questions regarding your
+                                                        symptoms, work, and interaction with others.</span>
+                                                </li>
+                                                <li>
+                                                    <i class="las la-bell"></i>
+                                                    <span>Your answers will not be shared with anyone and collect
+                                                        only for the purpose of Diagnose your disease.</span>
+                                                </li>
+                                                <li>
+                                                    <i class="las la-feather-alt"></i>
+                                                    <span>By using this tool, you agree to the <a href="#">terms &
+                                                            conditions</a> of Checker</span>
+                                                </li>
+                                            </ul>
+                                            <div class="buttons mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">Use for Yourself</a>
+                                                <a href="#" class="btn btn-secondary swiper-next">Use for
+                                                    Someone</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen three">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">How old are you?</h4>
+
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="age1" name="age"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="age1">Age under 18</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="age2" name="age"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="age2">Age between
+                                                        18-64</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="age3" name="age"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="age3">Age 65 or
+                                                        older</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen four">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">What is your sex?</h4>
+
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="gender1" name="gender"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="gender1">Male</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="gender2" name="gender"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="gender2">Female</label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="gender3" name="gender"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="gender3">Other</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen five">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">What is your location?</h4>
+
+                                            <div class="data-inputs">
+                                                <div class="select-group mb-4">
+                                                    <label for="inputCountry">Country</label>
+                                                    <div class="custom-select-wrapper">
+                                                        <select class="custom-select" id="inputCountry">
+                                                            <option selected>United States</option>
+                                                            <option>Australia</option>
+                                                            <option>Canada</option>
+                                                            <option>Nigeria</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="select-group mb-4">
+                                                    <label for="inputState">State</label>
+                                                    <div class="custom-select-wrapper">
+                                                        <select class="custom-select" id="inputState">
+                                                            <option selected>New York</option>
+                                                            <option>Boston</option>
+                                                            <option>Los Angeles</option>
+                                                            <option>Chicago</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputZip">ZIP/Postal Code</label>
+                                                    <input type="text" class="form-control" placeholder="Ex: 152456"
+                                                        id="inputZip">
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen six">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">Select all the symptoms you are suffering?</h4>
+
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check1">
+                                                    <label class="custom-control-label" for="s1Check1">
+                                                        Fever (between 98° - 104° fahrenheit)
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check2">
+                                                    <label class="custom-control-label" for="s1Check2">
+                                                        Dry coughs
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check3">
+                                                    <label class="custom-control-label" for="s1Check3">
+                                                        Sore throat
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check4">
+                                                    <label class="custom-control-label" for="s1Check4">
+                                                        Shortness of breath
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check5">
+                                                    <label class="custom-control-label" for="s1Check5">
+                                                        Aching through the body
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check6">
+                                                    <label class="custom-control-label" for="s1Check6">
+                                                        Diarrhea or Vomiting
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check7">
+                                                    <label class="custom-control-label" for="s1Check7">
+                                                        Headache
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check8">
+                                                    <label class="custom-control-label" for="s1Check8">
+                                                        Sense loss of smell or teste
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s1Check9">
+                                                    <label class="custom-control-label" for="s1Check9">
+                                                        None of the above
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen seven">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">Do you find any of these applicable to you?</h4>
+
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check1">
+                                                    <label class="custom-control-label" for="s2Check1">
+                                                        Do you have diabetes?
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check2">
+                                                    <label class="custom-control-label" for="s2Check2">
+                                                        Pregnancy
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check3">
+                                                    <label class="custom-control-label" for="s2Check3">
+                                                        Very overweight?
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check4">
+                                                    <label class="custom-control-label" for="s2Check4">
+                                                        Severe heart disease or heart failure
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check5">
+                                                    <label class="custom-control-label" for="s2Check5">
+                                                        HIV or AIDS?
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check6">
+                                                    <label class="custom-control-label" for="s2Check6">
+                                                        Chemotherapy or chemo?
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check7">
+                                                    <label class="custom-control-label" for="s2Check7">
+                                                        Kidney failure? that need dialysis
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check8">
+                                                    <label class="custom-control-label" for="s2Check8">
+                                                        Inherited immune system?
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check9">
+                                                    <label class="custom-control-label" for="s2Check9">
+                                                        Have hemotherapy?
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check10">
+                                                    <label class="custom-control-label" for="s2Check10">
+                                                        Extrime level of obesity
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="s2Check11">
+                                                    <label class="custom-control-label" for="s2Check11">
+                                                        None of the above
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen eight">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">Have yot traveled internationally in the last 14 days?</h4>
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="traveledYes" name="traveled"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="traveledYes">
+                                                        Yes I have Traveled
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="traveledNo" name="traveled"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="traveledNo">
+                                                        No don't have Traveled
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen nine">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">Have you been to an area where COVID‐19 is widespread in
+                                                the last 14 days?</h4>
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                        id="traveledArea">
+                                                    <label class="custom-control-label" for="traveledArea">
+                                                        I stay in an area where COVID-19 has become prevalent.
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                        id="traveledRegion">
+                                                    <label class="custom-control-label" for="traveledRegion">
+                                                        I visited an region where COVID-19 is prevalent
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" id="dontKnow" class="custom-control-input">
+                                                    <label class="custom-control-label" for="dontKnow">
+                                                        I don’t know
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" id="selectNone3" class="custom-control-input">
+                                                    <label class="custom-control-label" for="selectNone3">
+                                                        None of the above
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen ten">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">Over the last 14 days, what is your exposure to others who
+                                                are known to have COVID‑19?</h4>
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="stayClose">
+                                                    <label class="custom-control-label" for="stayClose">
+                                                        I stay with someone who's had COVID-19
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="stayTouch">
+                                                    <label class="custom-control-label" for="stayTouch">
+                                                        I have been in near touch with anyone who has COVID-19
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" id="stayNone" class="custom-control-input">
+                                                    <label class="custom-control-label" for="stayNone">
+                                                        I don’t know
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="result.html" class="btn btn-primary">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen emergency-check">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">For the emergency situation? Call 998</h4>
+                                            <div class="block">
+                                                <ul>
+                                                    <li>Extrime difficulity of breathing</li>
+                                                    <li>Continous or severe pain or pressure in your chest </li>
+                                                    <li>Continous lightheaded feelings</li>
+                                                </ul>
+                                            </div>
+                                            <div class="data-inputs">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="eSysmptomsYes" name="eSysmptoms"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="eSysmptomsYes">
+                                                        I had at least all of these symptoms
+                                                    </label>
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="eSysmptomsNo" name="eSysmptoms"
+                                                        class="custom-control-input">
+                                                    <label class="custom-control-label" for="eSysmptomsNo">
+                                                        I don't have either of these symptoms
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary swiper-next">
+                                                    <span>Next</span>
+                                                    <i class="las la-long-arrow-alt-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="screen emergency">
+                                        <div class="screen-content">
+                                            <h4 class="mb-4">For the emergency situation? Call 998</h4>
+                                            <div class="block">
+                                                <p>
+                                                    Depending on your recorded symptoms, you will receive emergency
+                                                    treatment.
+                                                </p>
+                                            </div>
+                                            <div class="buttons d-flex justify-content-center mt-5">
+                                                <a href="#" class="btn btn-primary">
+                                                    Call 998
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-control-header">
+                                <a href="#" class="swiper-prev">
+                                    <i class="las la-arrow-left"></i>
+                                    <span>Back</span>
+                                </a>
+                                <a href="#" class="swiper-cancel" id="swiper-cancel">
+                                    <i class="las la-times"></i>
+                                    <span>Cancel</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="screen two">
-                                <p class="glowing-text">Stay Home, Stay Safe</p>
-                                <h2>COVID-19 Testing Tool</h3>
-                                <div class="anim-icon">
-                                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_wpGbRj.json"
-                                        background="transparent" speed="1" style="width: 100%; height: 100%;" loop
-                                        autoplay>
-                                    </lottie-player>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <i class="lab la-twitter"></i>
-                                        <span>You'll address a some of questions regarding your symptoms, work, and
-                                            interaction with others.</span>
-                                    </li>
-                                    <li>
-                                        <i class="lab la-twitter"></i>
-                                        <span>Your answers will not be shared with anyone and collect only for the
-                                            purpose of Diagnose your disease.</span>
-                                    </li>
-                                    <li>
-                                        <i class="lab la-twitter"></i>
-                                        <span>By using this tool, you agree to the <a href="#">terms & conditions</a> of
-                                            Checker</span>
-                                    </li>
-                                </ul>
-                                <div class="buttons">
-                                    <a href="#" class="btn btn-primary swiper-next">Use for Yourself</a>
-                                    <a href="#" class="btn btn-primary swiper-next">Use for Someone</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="screen">
-                                <h2>Slide 3</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-control-header">
-                        <a href="#" class="swiper-prev">
-                            <i class="las la-arrow-left"></i>
-                            <span>Back</span>
-                        </a>
-                        <a href="#" class="swiper-cancel" id="swiper-cancel">
-                            <i class="las la-times"></i>
-                            <span>Cancel</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -150,7 +580,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container">
             <ul class="social">
                 <li>

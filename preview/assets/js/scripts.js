@@ -9,17 +9,21 @@
     });
 
     const checkerSlider = new Swiper('.swiper-container', {
-        simulateTouch: false,
+        // simulateTouch: false,
         autoHeight: true,
-        // Navigation arrows
         navigation: {
             nextEl: '.swiper-next',
             prevEl: '.swiper-prev',
         }
     });
-    document.getElementById("swiper-cancel").addEventListener("click", function () {
-        checkerSlider.slideTo(0)
-    });
+
+    const cancelBtn = document.getElementById("swiper-cancel");
+    if ($(cancelBtn).length != 0) {
+        cancelBtn.addEventListener("click", function () {
+            checkerSlider.slideTo(0,0)
+        });
+    }
+
 
 
 })(jQuery);
